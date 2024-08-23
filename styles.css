@@ -1,0 +1,232 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 380px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+}
+
+h1 {
+    color: #FF6B82;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.offer-box {
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.offer-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.offer-details {
+    flex: 1;
+    padding: 11px;
+    text-align: left;
+}
+
+.custom-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FF6B82;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #FF6B82;
+}
+
+.custom-radio input:checked ~ .checkmark {
+    background-color: white;
+    box-shadow: 0 0 0 6px #FF6B82; 
+}
+
+.discount-container {
+    margin-left: 10px;
+}
+#radio1{
+    accent-color: #f34e68;
+
+}
+#radio2{
+    accent-color: #f34e68;
+
+}
+#radio3{
+    accent-color: #f34e68;
+
+}
+.discount-tag {
+    width: 70px;
+    height: 74px;
+    background-color: #FF6B82;
+    color: white;
+    border-radius: 8px 0 0 10px;
+    border: 0.9px solid #FF6B82;
+    display: flex;
+    line-height: 76px;
+    margin-left: -10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.discount {
+    display: none;
+    color: #FF6B82;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.offer-header input[type="radio"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #FF6B82;
+    background-color: white;
+    cursor: pointer;
+    /* appearance: none; */
+    transition: background-color 0.2s ease;
+}
+
+.offer-header input[type="radio"]:checked {
+    background-color: #FF6B82;
+    border-color: #FF6B82;
+}
+
+.offer-title {
+    font-size: 14px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.offer-price {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.most-popular {
+    color: #FF6B82;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-left: 36px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.size-color-options {
+    display: none;
+    margin-top: 10px;
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.option label {
+    flex-basis: 40%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.option select {
+    flex-basis: 55%;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: #FF6B82;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: #FF6B82;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.discount{
+    position: relative;
+    top: -51px;
+    left: 89px;
+    background-color: #FF6B82;
+    width: 67px;
+    height: 23px;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+    font-weight: bold;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+footer span {
+    color: #FF6B82;
+    font-weight: bold;
+}
